@@ -1,5 +1,5 @@
 {% set name = "pshmem" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a6fd8522c5afdafadb796c30aa0fa0b9a352ed1bc80677cd4508035a0800aa2
+  sha256: 3c38a9551b0d22a1bbbf731475679efc8559e988e75a5c8de8c4f9e2aa2704cc
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Parallel shared memory and locking with MPI'
+  summary: Parallel shared memory and locking with MPI
   description: |
     This is a small package that implements parallel design patterns using MPI
     one-sided and shared memory constructs.
