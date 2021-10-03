@@ -1,5 +1,5 @@
 {% set name = "pshmem" %}
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3c38a9551b0d22a1bbbf731475679efc8559e988e75a5c8de8c4f9e2aa2704cc
+  sha256: ddd1025199469195e11c456c976f67daac269fc8f6177112b2517d34961fcd30
 
 build:
   noarch: python
