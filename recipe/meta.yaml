@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - posix_ipc
+    - sysv_ipc
 
 test:
   imports:
