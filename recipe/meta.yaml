@@ -1,13 +1,13 @@
 {% set name = "pshmem" %}
-{% set version = "1.0.5" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/8b/63/27c19bc315d470db4cc5830f03eab207a69d2905184ea5590bd033e1f3f3/{{ name }}-{{ version }}.tar.gz
-  sha256: a1a701cfdc95050bb34b33ce8807120fd71856c6fde4e8223b324ce88d378927
+  url: https://files.pythonhosted.org/packages/84/54/65bcfe0a58e205c73d2bc3962336530f058228365eeddc51490e1c58c1bc/{{ name }}-{{ version }}.tar.gz
+  sha256: 72445b872f5a0d85ef5ac0dbfaedc4413f5a66aa97244b1823d4d81f19a9492e
 
 build:
   noarch: python
