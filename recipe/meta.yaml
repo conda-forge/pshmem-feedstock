@@ -1,13 +1,13 @@
 {% set name = "pshmem" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/84/54/65bcfe0a58e205c73d2bc3962336530f058228365eeddc51490e1c58c1bc/{{ name }}-{{ version }}.tar.gz
-  sha256: 72445b872f5a0d85ef5ac0dbfaedc4413f5a66aa97244b1823d4d81f19a9492e
+  url: https://files.pythonhosted.org/packages/34/c6/bbe690ad4c48c80956fa7f8e5d27a9b1534cc0711695d95dcbb813ea7b77/{{ name }}-{{ version }}.tar.gz
+  sha256: fe0b6250835c65be1459c69471296bf1a4a8ab510627b6a7e491e6122677ae05
 
 build:
   noarch: python
@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
+    - setuptools
+    - build
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
-    - sysv_ipc
 
 test:
   imports:
