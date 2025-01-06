@@ -16,15 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
-    - build
+    - python-build
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pshmem
 
