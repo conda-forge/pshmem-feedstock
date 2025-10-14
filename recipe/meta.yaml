@@ -12,22 +12,23 @@ source:
 build:
   noarch: python
   number: 0
+  script_env: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - pip
     - python-build
     - setuptools >=80
     - setuptools-scm >=8
   run:
-    - python >={{ python_min }}
+    - python
     - numpy
 
 test:
   requires:
-    - python {{ python_min }}
+    - python
   imports:
     - pshmem
 
