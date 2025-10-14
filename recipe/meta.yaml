@@ -17,18 +17,18 @@ build:
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - python-build
     - setuptools >=80
     - setuptools-scm >=8
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
 
 test:
   requires:
-    - python
+    - python {{ python_min }}
   imports:
     - pshmem
 
