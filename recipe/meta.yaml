@@ -1,5 +1,5 @@
 {% set name = "pshmem" %}
-{% set version = "1.3.1" %}
+{% set version = "1.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tskisner/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c1edaff24c22f2df810cf5713131caeabc564dc95cbcb331b5046c18d6071d9a
+  sha256: d632463af578c7f711e6bf79a5cb7b01e52cfa73741ef815a640e4a26c58bb0f
 
 build:
   noarch: python
